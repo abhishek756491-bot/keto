@@ -87,7 +87,8 @@
     display: flex;
     gap: 30px;
     padding:100px 100px;
-    
+    overflow: hidden;
+   
  }
 .aboutcontant{
     width:40%;
@@ -95,15 +96,21 @@
     font-weight: 400;
     font-size: 17px;
     line-height: 28px;
-    padding-bottom: 35px;
 }
 .aboutimage{
-   width: 60%;
-   height:65vh;
-   background-image: url(image/about.png);
-   transition: all 0.5s ease;
+   width: 600px;
+   height: 450px;
+   /* background-image: url(image/about.png); */
+   overflow: hidden;
 }
-.aboutimage:hover{
+
+.aboutimage img{
+   transition: all 2s ease;
+
+}
+
+
+.aboutimage img:hover{
    transform: scale(1.05);
    /* overflow: hidden; */
 }
@@ -152,13 +159,21 @@
     gap: 40px;
 }
 .card{
-    width:30%;
-    height: 210px;
+    width:350px;
+    height: 350px;
     background-color:white;
+    overflow: hidden;
+    
 }
-.card image:hover{
-    transform: scale(1.1);
+ 
+.card img{
+   overflow: hidden; 
+   transition: all 2s ease;
 }
+.card img:hover{
+  transform: scale(1.2); 
+}
+  
 .card div{
     height: 150px;
     width:100%;
@@ -288,10 +303,6 @@
    display: flex;
    gap: 20px;
 }
-.contact2{
-     width: 50%;
-   height: 80vh;
-}
 .contact2 input{
     width: 100%;
     height: 20px;
@@ -300,6 +311,10 @@
     font-size: large;
     box-shadow: 2px 2px 9px 0.5px rgb(243, 179, 179);
     border:none;
+}
+.contact2{
+     width: 50%;
+   height: 80vh;
 }
 .contact2 textarea{
     height: 170px;
@@ -323,4 +338,14 @@
 }
 .contactus button:hover{
     background-color: #ff0909;
+}
+.dashboard{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #121212; */
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
